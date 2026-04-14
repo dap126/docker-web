@@ -16,8 +16,24 @@ Proyek ini adalah contoh aplikasi web sederhana menggunakan Python Flask yang di
    ```bash
    git clone https://github.com/dap126/docker-web.git
    cd docker-web
-   # Untuk menyalakan aplikasi
-   docker compose up -d
+   bash```
 
-   # Untuk menghentikan aplikasi
+2. Jalankan aplikasi menggunakan Docker Compose:
+   ```bash
+   docker compose up -d
+   bash```
+
+3. Akses aplikasi melalui browser atau curl:
+   Buka http://localhost:8080. Setiap kali Anda me-refresh halaman, angka counter akan bertambah.
+
+4. Untuk menghentikan aplikasi:
+   ```bash
    docker compose down
+   bash```
+
+5. Tunggu hingga Docker selesai mengunduh image Alpine dan membangun aplikasi Anda. Setelah selesai, uji coba dengan membuka browser dan mengakses http://localhost:8080 atau gunakan curl di terminal:
+   ```bash
+   curl http://localhost:8080
+   # Lakukan refresh (atau jalankan perintah curl beberapa kali) untuk melihat angka kunjungan bertambah.
+   bash```
+ 
